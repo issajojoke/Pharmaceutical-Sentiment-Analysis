@@ -11,17 +11,18 @@ As a data scientist on a pharmaceutical data team, it would be very beneficial t
 
 ### Process
 1. Find the proper dataset - A data set was found on kaggle and has 161298 rows of data, containing the uniqueID, drug name, condition, review, raiting, and usefulcount was chosen for this project.
-2. Data cleaning/preprocessing - Cleaned and normalized the text in all columns with text by replacing random characters, making all text lowercase, tokenizing, removing stopwords, and stemming the text. Completed this using CountVectorizer from sklearn. Then inserted the key words from all reviews as a list in a new column.
-3. Exploratory data analysis - Looked at the statistics of the numeric values for rating and usefulCount. Got a description of the average rating/usefulCount, and the average length of reviews.
+    - Here is a link for all of the CSV files used in this project: https://drive.google.com/drive/folders/1gsT-tfdP3vDG3DYnOGX5ZRbgIJY3iSVU?usp=share_link
+3. Data cleaning/preprocessing - Cleaned and normalized the text in all columns with text by replacing random characters, making all text lowercase, tokenizing, removing stopwords, and stemming the text. Completed this using CountVectorizer from sklearn. Then inserted the key words from all reviews as a list in a new column.
+4. Exploratory data analysis - Looked at the statistics of the numeric values for rating and usefulCount. Got a description of the average rating/usefulCount, and the average length of reviews.
     - created a new dataframe with 2 columns; ratings, combined words (combined all words associated with the same rating)
     - took top 200 words from each list
-4. Feature engineering - converted the top 2000 words list and the words list in the dataframe into matching numeric values using bag of word (CountVectorizer)
+5. Feature engineering - converted the top 2000 words list and the words list in the dataframe into matching numeric values using bag of word (CountVectorizer)
     - counted how many times a word showed up for each rating to compare frequency 
     - balanced the data by using the oversampling method by replicating minority data.  
-5. NLP preparation - Convert words to a numeric representation using BagOfWords through CountVectorizer. Also used DistilBert to account for context and nuance. 
+6. NLP preparation - Convert words to a numeric representation using BagOfWords through CountVectorizer. Also used DistilBert to account for context and nuance. 
     - Due to difficulty with accurately predicting the numeric ratings (1-10), I opted for a more accurate approach by splitting the ratings into 3 separate classes. This allowed for less errors. 
-6. NLP modelling - Used numerous models to determine which model is the most accurate: naive bayes, SVM classification models, keras neural network models. 
-7. Finalize sentiment analysis model 
+7. NLP modelling - Used numerous models to determine which model is the most accurate: naive bayes, SVM classification models, keras neural network models. 
+8. Finalize sentiment analysis model 
 
 ### Findings
 - In my case, support vector machines are the most accurate models for text classification.
