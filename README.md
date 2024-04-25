@@ -10,7 +10,7 @@ When a patient is newly prescribed a medication that they are unfamiliar with, t
 As a data scientist on a pharmaceutical data team, it would be very beneficial to monitor the key words used in these discussion forums to have a deeper understanding of how these medications are benefitting the patients, and what may need improvement. 
 
 ### Process
-1. Find the proper dataset - A data set that had 161298 rows of data, containing the uniqueID, drug name, condition, review, raiting, and usefulcount was chosen for this project.
+1. Find the proper dataset - A data set was found on kaggle and has 161298 rows of data, containing the uniqueID, drug name, condition, review, raiting, and usefulcount was chosen for this project.
 2. Data cleaning/preprocessing - Cleaned and normalized the text in all columns with text by replacing random characters, making all text lowercase, tokenizing, removing stopwords, and stemming the text. Completed this using CountVectorizer from sklearn. Then inserted the key words from all reviews as a list in a new column.
 3. Exploratory data analysis - Looked at the statistics of the numeric values for rating and usefulCount. Got a description of the average rating/usefulCount, and the average length of reviews.
     - created a new dataframe with 2 columns; ratings, combined words (combined all words associated with the same rating)
