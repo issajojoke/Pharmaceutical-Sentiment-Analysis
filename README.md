@@ -11,7 +11,7 @@ As a data scientist on a pharmaceutical data team, it would be very beneficial t
 
 ### Process
 1. Find the proper dataset - A data set was found on kaggle and has 161298 rows of data, containing the uniqueID, drug name, condition, review, raiting, and usefulcount was chosen for this project.
-    - Here is a link for all of the CSV files used in this project: https://drive.google.com/drive/folders/1gsT-tfdP3vDG3DYnOGX5ZRbgIJY3iSVU?usp=share_link
+    - [Here is a link for all of the CSV files used in this project](https://drive.google.com/drive/folders/1gsT-tfdP3vDG3DYnOGX5ZRbgIJY3iSVU?usp=share_link)
 3. Data cleaning/preprocessing - Cleaned and normalized the text in all columns with text by replacing random characters, making all text lowercase, tokenizing, removing stopwords, and stemming the text. Completed this using CountVectorizer from sklearn. Then inserted the key words from all reviews as a list in a new column.
 4. Exploratory data analysis - Looked at the statistics of the numeric values for rating and usefulCount. Got a description of the average rating/usefulCount, and the average length of reviews.
     - created a new dataframe with 2 columns; ratings, combined words (combined all words associated with the same rating)
