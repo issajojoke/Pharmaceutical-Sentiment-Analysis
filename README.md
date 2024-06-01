@@ -1,7 +1,7 @@
 # Pharmaceutical-Sentiment-Analysis
 
 ## Project Outcomes
-For this project, I created a sentiment analysis on pharmaceutical drugs reviews using NLP (natural language processing) to classify and predict satisfaction ratings out of ten. The goal for this is to be able to maintain and stay updated on medication integrity, safety, and satisfaction.
+For this project, I created a sentiment analysis on pharmaceutical drugs reviews using NLP (natural language processing) to classify and predict satisfaction ratings out of 3 classes. The goal for this is to be able to maintain and stay updated on medication integrity, safety, and satisfaction.
  
 The modules used in this project include: pandas, sklearn, collections, numpy, csv, ast, joblib, nltk, BERT, tensorflow, keras
 
